@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_insere"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFundo"
+    tools:context="com.wyz.myimagegallery.Activitys.MainActivity">
+
+    <TextView
+        android:id="@+id/nadaTituloInsere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="47dp"
+        android:text="Titulo:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/InsereTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/nadaTituloInsere"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/nadaDetalhesInsere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/InsereTitulo"
+        android:layout_marginTop="51dp"
+        android:text="Detalhes:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/InsereDetalhes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/InsereTitulo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/InsereTitulo"
+        android:layout_below="@+id/nadaDetalhesInsere"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/nadaImagemInsere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/InsereDetalhes"
+        android:layout_marginTop="64dp"
+        android:text="Imagem:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/envia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/ImagemInsere"
+        android:layout_below="@+id/ImagemInsere"
+        android:layout_marginTop="21dp"
+        android:background="@color/colorFundo"
+        android:text="Enviar"
+        android:textColor="@android:color/black" />
+
+    <ImageView
+        android:id="@+id/ImagemInsere"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/nadaImagemInsere"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="false"
+        android:src="@mipmap/ic_launcher" />
+
+    <Button
+        android:id="@+id/pega_imagem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ImagemInsere"
+        android:layout_marginStart="30dp"
+        android:layout_toEndOf="@+id/envia"
+        android:background="@color/colorFundo"
+        android:text="Carregar Imagem"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/targeturi"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ImagemInsere"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

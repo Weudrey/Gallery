@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_alterar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFundo"
+    tools:context="com.wyz.myimagegallery.Activitys.MainActivity">
+
+    <TextView
+        android:id="@+id/nadaTituloAltera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="75dp"
+        android:text="Titulo:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/alteraTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/nadaTituloAltera"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/nadaDetalhesAltera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/alteraTitulo"
+        android:layout_marginTop="45dp"
+        android:text="Detalhes"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/alteraDetalhe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/alteraTitulo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/alteraTitulo"
+        android:layout_below="@+id/nadaDetalhesAltera"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/alterar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorFundo"
+        android:text="Alterar"
+        android:textColor="@android:color/black"
+        android:layout_above="@+id/deletar"
+        android:layout_alignStart="@+id/deletar" />
+
+    <Button
+        android:id="@+id/deletar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/alteraImagem"
+        android:layout_marginBottom="23dp"
+        android:layout_marginStart="11dp"
+        android:background="@color/colorFundo"
+        android:text="Deletar"
+        android:textColor="@android:color/black" />
+
+    <ImageView
+        android:id="@+id/alteraImagem"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_below="@+id/nadaImagem"
+        android:layout_toEndOf="@+id/nadaDetalhesAltera"
+        android:layout_marginStart="48dp" />
+
+    <TextView
+        android:id="@+id/nadaImagem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Imagem"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/alteraImagem" />
+</RelativeLayout>

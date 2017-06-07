@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFundo"
+    tools:context="com.wyz.myimagegallery.Activitys.LoginActivity">
+
+    <TextView
+        android:id="@+id/nadaEmailLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/campoEmailLogin"
+        android:layout_marginTop="35dp"
+        android:text="E-mail"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/nadaSenhaLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/campoSenhaLogin"
+        android:layout_below="@+id/campoEmailLogin"
+        android:layout_marginTop="26dp"
+        android:text="Senha"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/campoSenhaLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:layout_below="@+id/nadaSenhaLogin"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/campoEmailLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:layout_below="@+id/nadaEmailLogin"
+        android:layout_alignStart="@+id/nadaSenhaLogin" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:layout_alignEnd="@+id/campoSenhaLogin"
+        android:layout_below="@+id/campoSenhaLogin"
+        android:layout_marginEnd="57dp"
+        android:layout_marginTop="43dp"
+        android:background="@color/colorPrimary"
+        android:text="Login"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/cadastrese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textColor="@android:color/black"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/voltarImagemView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="94dp"
+        android:src="@mipmap/ic_app" />
+</RelativeLayout>

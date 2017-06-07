@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFundo"
+    tools:context="com.wyz.myimagegallery.Activitys.RegisterActivity">
+
+    <TextView
+        android:id="@+id/nadaNomeCadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="23dp"
+        android:text="Nome"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/nomeCadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/nadaNomeCadastro"
+        android:layout_below="@+id/nadaNomeCadastro"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/nadaEmailCadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/nomeCadastro"
+        android:layout_below="@+id/nomeCadastro"
+        android:layout_marginTop="26dp"
+        android:text="E-mail"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/emailCadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/nadaEmailCadastro"
+        android:layout_below="@+id/nadaEmailCadastro"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/nadaSenhaCadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/emailCadastro"
+        android:layout_below="@+id/emailCadastro"
+        android:layout_marginTop="22dp"
+        android:text="Senha"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/senhaCadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/emailCadastro"
+        android:layout_below="@+id/nadaSenhaCadastro"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/cadastroFazer"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/senhaCadastro"
+        android:layout_below="@+id/senhaCadastro"
+        android:layout_marginTop="34dp"
+        android:background="@color/colorPrimary"
+        android:text="Cadastrar"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/voltarCadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="voltar"
+        android:textColor="@android:color/black"
+        android:layout_alignBaseline="@+id/cadastroFazer"
+        android:layout_alignBottom="@+id/cadastroFazer"
+        android:layout_toEndOf="@+id/cadastroFazer"
+        android:layout_marginStart="29dp" />
+</RelativeLayout>
