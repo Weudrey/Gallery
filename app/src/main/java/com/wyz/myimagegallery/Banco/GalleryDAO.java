@@ -11,11 +11,11 @@ public class GalleryDAO extends SQLiteOpenHelper {
 
     public static final String NOME_BANCO = "banco.db";
     public static final String TABELA = "GALERIA";
-    public static final String ID = "ID";
+    public static final String ID = "_id";
     public static final String TITULO = "TITULO";
     public static final String DETALHES = "DETALHES";
     public static final String IMAGEM = "IMAGEM";
-    public static final int VERSAO = 3;
+    public static final int VERSAO = 6;
 
     public GalleryDAO(Context context){
         super(context, NOME_BANCO,null,VERSAO);

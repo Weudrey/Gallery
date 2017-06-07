@@ -15,13 +15,13 @@ import com.wyz.myimagegallery.classes.User;
 
 public class UserDAO extends SQLiteOpenHelper{
 
-        private static final int DATABASE_VERSION = 3;
+        private static final int DATABASE_VERSION = 6;
 
         private static final String DATABASE_NAME = "banco.db";
 
         private static final String TABLE_USER = "USER";
 
-        private static final String COLUMN_USER_ID = "user_id";
+        private static final String COLUMN_USER_ID = "_user_id";
         private static final String COLUMN_USER_NAME = "user_name";
         private static final String COLUMN_USER_EMAIL = "user_email";
         private static final String COLUMN_USER_PASSWORD = "user_password";
