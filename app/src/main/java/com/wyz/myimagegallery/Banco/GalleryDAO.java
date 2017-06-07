@@ -15,7 +15,7 @@ public class GalleryDAO extends SQLiteOpenHelper {
     public static final String TITULO = "TITULO";
     public static final String DETALHES = "DETALHES";
     public static final String IMAGEM = "IMAGEM";
-    public static final int VERSAO = 6;
+    public static final int VERSAO = 7;
 
     public GalleryDAO(Context context){
         super(context, NOME_BANCO,null,VERSAO);

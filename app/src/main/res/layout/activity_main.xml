@@ -44,4 +44,13 @@
         android:text="Image Gallery"
         android:textColor="@android:color/holo_red_dark"
         android:textSize="36sp" />
+
+    <Button
+        android:id="@+id/inserirTeste"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Login"
+        android:layout_marginStart="22dp"
+        android:layout_toEndOf="@+id/Login"
+        android:text="inserir Test" />
 </RelativeLayout>

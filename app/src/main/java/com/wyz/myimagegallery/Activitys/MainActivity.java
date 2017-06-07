@@ -33,6 +33,15 @@ public class MainActivity extends Activity {
 
             }
         });
+        Button inserirTeste = (Button)findViewById(R.id.inserirTeste);
+        inserirTeste.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,InsereActivity.class);
+                startActivity(intent);
+
+            }
+        });
     }
 
 }

@@ -40,7 +40,7 @@ public class BancoController {
 
     public Cursor carregaDados(){
         Cursor cursor;
-        String[] campos =  {banco.ID, banco.TITULO,banco.IMAGEM};
+        String[] campos =  {banco.TITULO,banco.IMAGEM};
         db = banco.getReadableDatabase();
 
         cursor = db.query(banco.TABELA, campos, null, null, null, null, null, null);

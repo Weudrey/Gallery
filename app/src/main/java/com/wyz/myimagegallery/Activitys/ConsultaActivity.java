@@ -25,12 +25,11 @@ public class ConsultaActivity extends Activity {
         BancoController crud = new BancoController(getBaseContext());
         final Cursor cursor = crud.carregaDados();
 
-        String[] nomeCampos = new String[] {GalleryDAO.ID, GalleryDAO.TITULO, GalleryDAO.IMAGEM};
-        int[] idViews = new int[] {R.id.idGallery, R.id.nomeGallery, R.id.imagemGallery};
+        String[] nomeCampos = new String[] {GalleryDAO.TITULO, GalleryDAO.IMAGEM};
+        int[] idViews = new int[] {R.id.nomeGallery, R.id.imagemGallery};
 
 
-        SimpleCursorAdapter adaptador = new SimpleCursorAdapter(getBaseContext(),
-                R.layout.gallery_layout,cursor,nomeCampos,idViews, 0);
+        SimpleCursorAdapter adaptador = new SimpleCursorAdapter(getBaseContext(), R.layout.gallery_layout,cursor,nomeCampos,idViews, 0);
         lista = (ListView)findViewById(R.id.listView);
         lista.setAdapter(adaptador);
 
