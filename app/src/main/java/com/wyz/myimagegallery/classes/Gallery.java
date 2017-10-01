@@ -23,6 +23,13 @@ public class Gallery {
 
 
         }
+        public Gallery(String titulo, String detalhes, String imagem) {
+            this.titulo = titulo;
+            this.detalhes = detalhes;
+            this.imagem = imagem;
+
+
+        }
 
         public int getID() {
             return ID;
@@ -56,6 +63,12 @@ public class Gallery {
             this.imagem = imagem;
         }
 
-
+    @Override
+    public String toString() {
+        return "GALERIA:\n" +
+                "TITULO=" + titulo + "\n" +
+                "DETALHES=" + detalhes + "\n" +
+                "IMAGEM=" + imagem + "\n";
+    }
 
 }

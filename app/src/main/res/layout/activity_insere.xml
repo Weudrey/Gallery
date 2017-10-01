@@ -89,12 +89,12 @@
         android:id="@+id/pega_imagem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/ImagemInsere"
-        android:layout_marginStart="30dp"
-        android:layout_toEndOf="@+id/envia"
+        android:layout_marginStart="70dp"
         android:background="@color/colorFundo"
         android:text="Carregar Imagem"
-        android:textColor="@android:color/black" />
+        android:textColor="@android:color/black"
+        android:layout_alignTop="@+id/ImagemInsere"
+        android:layout_toEndOf="@+id/ImagemInsere" />
 
     <TextView
         android:id="@+id/targeturi"

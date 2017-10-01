@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.ACTION_GET_CONTENT" />
     <uses-permission android:name="android.permission.ACTIVITY_SELECT_IMAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -12,6 +13,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
         <activity android:name=".Activitys.AlterarActivity" />
         <activity android:name=".Activitys.ConsultaActivity" />
         <activity android:name=".Activitys.InsereActivity" />
@@ -22,9 +26,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activitys.LoginActivity" />
-        <activity android:name=".Activitys.RegisterActivity" />
-        <activity android:name=".Activitys.UserActivity"></activity>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name=".Activitys.Json"
+            android:configChanges="orientation|screenSize"></activity>
     </application>
 
 </manifest>

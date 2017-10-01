@@ -1,6 +1,8 @@
 package com.wyz.myimagegallery.Banco;
 
+import android.content.ContentValues;
 import android.content.Context;
+import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
@@ -15,7 +17,7 @@ public class GalleryDAO extends SQLiteOpenHelper {
     public static final String TITULO = "TITULO";
     public static final String DETALHES = "DETALHES";
     public static final String IMAGEM = "IMAGEM";
-    public static final int VERSAO = 7;
+    public static final int VERSAO = 14;
 
     public GalleryDAO(Context context){
         super(context, NOME_BANCO,null,VERSAO);
@@ -37,4 +39,6 @@ public class GalleryDAO extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS " + TABELA);
         onCreate(db);
     }
+
+
 }

@@ -7,22 +7,34 @@
     android:background="@color/colorFundo"
     tools:context="com.wyz.myimagegallery.Activitys.MainActivity">
 
+    <com.facebook.login.widget.ProfilePictureView
+        android:id="@+id/profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></com.facebook.login.widget.ProfilePictureView>
+
+    <TextView
+        android:id="@+id/textNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile"
+        android:layout_alignParentStart="true" />
+
     <ListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/listView"
-        android:layout_below="@+id/voltar"
+        android:layout_below="@+id/textNome"
         android:layout_alignParentStart="true" />
 
     <Button
-        android:id="@+id/voltar"
+        android:id="@+id/ADD"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:background="@color/colorFundo"
         android:fontFamily="serif-monospace"
-        android:text="Voltar"
+        android:text="Add"
         android:textColor="@android:color/black"
         android:textSize="30sp" />
 

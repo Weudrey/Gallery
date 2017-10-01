@@ -1,19 +1,34 @@
 package com.wyz.myimagegallery.Util;
 
+import android.content.ContentValues;
+import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.util.Base64;
+import android.util.Log;
 
+import com.wyz.myimagegallery.Banco.BancoController;
+import com.wyz.myimagegallery.Banco.GalleryDAO;
+import com.wyz.myimagegallery.classes.Gallery;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.StringWriter;
+import java.io.Writer;
+import java.util.ArrayList;
+import java.util.List;
 
-/**
- * Created by Diego on 29/05/2017.
- */
 
 public class Util {
+
 
 
     private static InputStream toInputStream(Bitmap bitmap){
@@ -50,4 +65,30 @@ public class Util {
         Bitmap decodedImage = BitmapFactory.decodeByteArray(decodedString,0,decodedString.length);
         return decodedImage;
     }
+
+
+
+    public static String webToString(InputStream inputStream) {
+        InputStream localStream = inputStream;
+        String localString = "";
+        Writer writer = new StringWriter();
+        try {
+            BufferedReader reader = new BufferedReader(new InputStreamReader(localStream, "UTF-8"));
+            String line = reader.readLine();
+            while (line != null) {
+                writer.write(line);
+                line = reader.readLine();
+            }
+            localString = writer.toString();
+            writer.close();
+            reader.close();
+            localStream.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return localString;
+    }
+
+
 }

@@ -5,7 +5,12 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
+import com.wyz.myimagegallery.Util.Util;
 import com.wyz.myimagegallery.classes.Gallery;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 
 public class BancoController {
@@ -40,7 +45,7 @@ public class BancoController {
 
     public Cursor carregaDados(){
         Cursor cursor;
-        String[] campos =  {banco.TITULO,banco.IMAGEM};
+        String[] campos =  {banco.ID, banco.TITULO, banco.DETALHES};
         db = banco.getReadableDatabase();
 
         cursor = db.query(banco.TABELA, campos, null, null, null, null, null, null);
@@ -92,4 +97,9 @@ public class BancoController {
         db.delete(GalleryDAO.TABELA,where,null);
         db.close();
     }
+
+
+
+
+
 }
